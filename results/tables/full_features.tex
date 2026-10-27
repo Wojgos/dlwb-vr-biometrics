@@ -1,0 +1,20 @@
+\begin{table}[H]\centering\small
+\caption{Pełny zestaw modalności (poz.+rot.): porównanie wariantów metryki i kosztu trenowania (średnia z 3 seedów).}\label{tab:full}
+\resizebox{\linewidth}{!}{\begin{tabular}{llcccccr}
+\toprule
+System & Model & Rank-1 NN & Rank-1 szablon & Rank-5 szablon & Acc. softmax & $\bar{s}_{gen}$ / $\bar{s}_{imp}$ & Czas [s] \\
+\midrule
+Quest & MIB-CNN & 91.8 & 91.8 & 97.8 & 92.3 & 0.83 / 0.34 & 21 \\
+ & GRU & 93.7 & 93.7 & 97.6 & 93.9 & 0.83 / 0.33 & 13 \\
+ & Transformer & 88.3 & 88.2 & 96.3 & 88.3 & 0.85 / 0.33 & 25 \\
+\midrule
+Vive & MIB-CNN & 93.7 & 94.1 & 99.5 & 94.1 & 0.84 / 0.33 & 22 \\
+ & GRU & 95.9 & 96.0 & 99.9 & 96.7 & 0.85 / 0.33 & 13 \\
+ & Transformer & 91.1 & 90.9 & 98.4 & 91.0 & 0.86 / 0.33 & 26 \\
+\midrule
+Cosmos & MIB-CNN & 88.8 & 88.9 & 97.3 & 89.1 & 0.81 / 0.34 & 20 \\
+ & GRU & 90.3 & 90.1 & 96.7 & 90.3 & 0.82 / 0.33 & 12 \\
+ & Transformer & 83.1 & 83.4 & 92.4 & 83.0 & 0.82 / 0.33 & 24 \\
+\bottomrule
+\end{tabular}}
+\end{table}

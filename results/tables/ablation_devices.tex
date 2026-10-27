@@ -1,0 +1,25 @@
+\begin{table}[H]\centering\small
+\caption{Dodatkowa ablacja urządzeń (pozycje + rotacje pojedynczego urządzenia), cross-day, 3 seedy.}\label{tab:abl_dev}
+\begin{tabular}{llcccccc}
+\toprule
+ & & \multicolumn{3}{c}{Rank-1 [\%] (NN, cosinus)} & \multicolumn{3}{c}{EER [\%]} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Cechy & Model & Quest & Vive & Cosmos & Quest & Vive & Cosmos \\
+\midrule
+prawy kontr. & MIB-CNN & 90.0$\pm$0.5 & 93.5$\pm$0.4 & 87.9$\pm$1.5 & \textbf{2.5$\pm$0.4} & 1.9$\pm$0.2 & 3.7$\pm$0.4 \\
+ & GRU & \textbf{91.9$\pm$1.8} & \textbf{93.7$\pm$0.8} & \textbf{88.0$\pm$1.5} & 3.0$\pm$0.6 & \textbf{1.5$\pm$0.2} & \textbf{3.3$\pm$0.4} \\
+ & Transformer & 80.2$\pm$0.7 & 85.5$\pm$1.6 & 81.1$\pm$0.4 & 5.4$\pm$0.2 & 3.4$\pm$0.5 & 5.4$\pm$0.5 \\
+ & \textit{surowe cechy} & 71.5 & 78.8 & 74.4 & 14.4 & 11.2 & 13.6 \\
+\midrule
+hełm & MIB-CNN & 71.8$\pm$0.5 & 76.7$\pm$1.2 & 54.5$\pm$1.4 & 10.0$\pm$1.8 & 4.1$\pm$0.3 & 13.1$\pm$0.5 \\
+ & GRU & \textbf{77.5$\pm$1.4} & \textbf{83.8$\pm$1.0} & \textbf{64.2$\pm$2.9} & \textbf{7.7$\pm$0.8} & \textbf{3.3$\pm$0.6} & \textbf{9.3$\pm$1.5} \\
+ & Transformer & 72.5$\pm$0.6 & 72.6$\pm$1.5 & 54.6$\pm$0.5 & 9.4$\pm$1.5 & 6.2$\pm$0.5 & 12.9$\pm$1.7 \\
+ & \textit{surowe cechy} & 69.5 & 76.3 & 60.0 & 12.7 & 8.8 & 14.1 \\
+\midrule
+lewy kontr. & MIB-CNN & 68.5$\pm$1.6 & 65.6$\pm$0.2 & 63.2$\pm$0.2 & 10.2$\pm$0.1 & 14.3$\pm$0.8 & 11.3$\pm$0.3 \\
+ & GRU & \textbf{74.1$\pm$1.6} & \textbf{67.6$\pm$1.3} & \textbf{69.3$\pm$1.7} & \textbf{7.4$\pm$0.3} & \textbf{13.5$\pm$0.7} & \textbf{10.3$\pm$1.0} \\
+ & Transformer & 67.6$\pm$3.1 & 63.9$\pm$1.5 & 66.3$\pm$0.5 & 12.4$\pm$1.5 & 14.2$\pm$0.5 & 13.6$\pm$1.0 \\
+ & \textit{surowe cechy} & 69.5 & 66.6 & 62.7 & 13.2 & 16.7 & 15.2 \\
+\bottomrule
+\end{tabular}
+\end{table}

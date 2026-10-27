@@ -1,0 +1,25 @@
+\begin{table}[H]\centering\small
+\caption{Eksperyment ablacyjny (modalności), weryfikacja cross-day: trening dzień 1, test dzień 2. Średnia $\pm$ odch. std. z 3 seedów. Pogrubiono najlepszy model w danej kolumnie.}\label{tab:abl_mod}
+\begin{tabular}{llcccccc}
+\toprule
+ & & \multicolumn{3}{c}{Rank-1 [\%] (NN, cosinus)} & \multicolumn{3}{c}{EER [\%]} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Cechy & Model & Quest & Vive & Cosmos & Quest & Vive & Cosmos \\
+\midrule
+pozycje & MIB-CNN & 88.0$\pm$0.4 & 87.1$\pm$0.9 & 82.8$\pm$1.5 & 4.0$\pm$0.3 & 4.0$\pm$0.5 & 4.2$\pm$0.6 \\
+ & GRU & \textbf{92.1$\pm$1.2} & \textbf{90.6$\pm$1.5} & \textbf{88.9$\pm$1.9} & \textbf{2.6$\pm$0.4} & \textbf{2.1$\pm$0.3} & \textbf{3.7$\pm$0.3} \\
+ & Transformer & 84.0$\pm$0.9 & 82.1$\pm$1.7 & 82.5$\pm$1.8 & 6.0$\pm$0.3 & 5.6$\pm$0.4 & 6.2$\pm$1.2 \\
+ & \textit{surowe cechy} & 81.7 & 86.6 & 82.4 & 11.0 & 10.3 & 10.5 \\
+\midrule
+rotacje & MIB-CNN & \textbf{88.0$\pm$1.2} & 87.4$\pm$1.2 & \textbf{86.7$\pm$0.9} & \textbf{4.2$\pm$0.1} & \textbf{3.2$\pm$0.5} & \textbf{5.1$\pm$0.8} \\
+ & GRU & 87.1$\pm$1.1 & \textbf{88.5$\pm$0.7} & 84.6$\pm$1.5 & 4.4$\pm$1.0 & 3.9$\pm$0.0 & 5.6$\pm$0.4 \\
+ & Transformer & 77.5$\pm$2.0 & 77.4$\pm$1.4 & 73.3$\pm$0.6 & 7.7$\pm$1.2 & 7.9$\pm$0.2 & 10.8$\pm$0.2 \\
+ & \textit{surowe cechy} & 78.3 & 83.2 & 75.1 & 9.9 & 10.0 & 12.0 \\
+\midrule
+poz.+rot. & MIB-CNN & 91.8$\pm$1.6 & 93.7$\pm$0.6 & 88.8$\pm$0.7 & 2.8$\pm$0.5 & 1.8$\pm$0.2 & \textbf{3.5$\pm$0.5} \\
+ & GRU & \textbf{93.7$\pm$1.4} & \textbf{95.9$\pm$1.3} & \textbf{90.3$\pm$0.1} & \textbf{2.3$\pm$0.4} & \textbf{1.1$\pm$0.3} & 3.9$\pm$0.7 \\
+ & Transformer & 88.3$\pm$0.5 & 91.1$\pm$0.5 & 83.1$\pm$2.2 & 3.6$\pm$0.2 & 2.9$\pm$0.2 & 6.8$\pm$0.4 \\
+ & \textit{surowe cechy} & 86.8 & 92.0 & 84.9 & 7.6 & 6.3 & 7.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

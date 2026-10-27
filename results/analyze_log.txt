@@ -1,0 +1,63 @@
+162 przebiegow
+{'MIB-CNN': {'pos': 196329, 'rot': 200361, 'all': 204393, 'right': 71913, 'head': 71913, 'left': 71913}, 'GRU': {'pos': 283497, 'rot': 288681, 'all': 293865, 'right': 283497, 'head': 283497, 'left': 283497}, 'Transformer': {'pos': 168617, 'rot': 171497, 'all': 174377, 'right': 168617, 'head': 168617, 'left': 168617}}
+worst users: {'Quest': [22, 30, 16, 35, 2], 'Vive': [35, 21, 9, 38, 11], 'Cosmos': [22, 40, 38, 24, 16]} {'Quest': [0.0, 0.16666666666666666, 0.5666666666666667, 0.7666666666666666, 0.7999999999999999], 'Vive': [0.13333333333333333, 0.3666666666666667, 0.6666666666666666, 0.8333333333333334, 0.8666666666666667], 'Cosmos': [0.0, 0.19999999999999998, 0.26666666666666666, 0.3333333333333333, 0.6]}
+Quest   MIB-CNN      pos    r1=0.880+-0.004 r1t=0.885 r5=0.962 eer=0.040 sm=0.895 t=21 p=196329
+Quest   MIB-CNN      rot    r1=0.880+-0.012 r1t=0.879 r5=0.966 eer=0.042 sm=0.881 t=21 p=200361
+Quest   MIB-CNN      all    r1=0.918+-0.016 r1t=0.918 r5=0.978 eer=0.028 sm=0.923 t=21 p=204393
+Quest   MIB-CNN      right  r1=0.900+-0.005 r1t=0.905 r5=0.985 eer=0.025 sm=0.904 t=13 p=71913
+Quest   MIB-CNN      head   r1=0.718+-0.005 r1t=0.715 r5=0.879 eer=0.100 sm=0.730 t=13 p=71913
+Quest   MIB-CNN      left   r1=0.685+-0.016 r1t=0.694 r5=0.879 eer=0.102 sm=0.693 t=13 p=71913
+Quest   GRU          pos    r1=0.921+-0.012 r1t=0.915 r5=0.979 eer=0.026 sm=0.922 t=13 p=283497
+Quest   GRU          rot    r1=0.871+-0.011 r1t=0.868 r5=0.959 eer=0.044 sm=0.865 t=13 p=288681
+Quest   GRU          all    r1=0.937+-0.014 r1t=0.937 r5=0.976 eer=0.023 sm=0.939 t=13 p=293865
+Quest   GRU          right  r1=0.919+-0.018 r1t=0.919 r5=0.983 eer=0.030 sm=0.920 t=13 p=283497
+Quest   GRU          head   r1=0.775+-0.014 r1t=0.776 r5=0.915 eer=0.077 sm=0.776 t=13 p=283497
+Quest   GRU          left   r1=0.741+-0.016 r1t=0.734 r5=0.913 eer=0.074 sm=0.747 t=13 p=283497
+Quest   Transformer  pos    r1=0.840+-0.009 r1t=0.839 r5=0.943 eer=0.060 sm=0.841 t=25 p=168617
+Quest   Transformer  rot    r1=0.775+-0.020 r1t=0.772 r5=0.911 eer=0.077 sm=0.770 t=25 p=171497
+Quest   Transformer  all    r1=0.883+-0.005 r1t=0.882 r5=0.963 eer=0.036 sm=0.883 t=25 p=174377
+Quest   Transformer  right  r1=0.802+-0.007 r1t=0.802 r5=0.946 eer=0.054 sm=0.802 t=25 p=168617
+Quest   Transformer  head   r1=0.725+-0.006 r1t=0.725 r5=0.888 eer=0.094 sm=0.719 t=25 p=168617
+Quest   Transformer  left   r1=0.676+-0.031 r1t=0.671 r5=0.854 eer=0.124 sm=0.674 t=25 p=168617
+Vive    MIB-CNN      pos    r1=0.871+-0.009 r1t=0.875 r5=0.965 eer=0.040 sm=0.878 t=22 p=196329
+Vive    MIB-CNN      rot    r1=0.874+-0.012 r1t=0.880 r5=0.974 eer=0.032 sm=0.893 t=24 p=200361
+Vive    MIB-CNN      all    r1=0.937+-0.006 r1t=0.941 r5=0.995 eer=0.018 sm=0.941 t=22 p=204393
+Vive    MIB-CNN      right  r1=0.935+-0.004 r1t=0.933 r5=0.989 eer=0.019 sm=0.934 t=14 p=71913
+Vive    MIB-CNN      head   r1=0.767+-0.012 r1t=0.765 r5=0.982 eer=0.041 sm=0.782 t=14 p=71913
+Vive    MIB-CNN      left   r1=0.656+-0.002 r1t=0.666 r5=0.819 eer=0.143 sm=0.664 t=13 p=71913
+Vive    GRU          pos    r1=0.906+-0.015 r1t=0.906 r5=0.989 eer=0.021 sm=0.919 t=14 p=283497
+Vive    GRU          rot    r1=0.885+-0.007 r1t=0.885 r5=0.962 eer=0.039 sm=0.886 t=15 p=288681
+Vive    GRU          all    r1=0.959+-0.013 r1t=0.960 r5=0.999 eer=0.011 sm=0.967 t=13 p=293865
+Vive    GRU          right  r1=0.937+-0.008 r1t=0.937 r5=0.994 eer=0.015 sm=0.937 t=13 p=283497
+Vive    GRU          head   r1=0.838+-0.010 r1t=0.844 r5=0.985 eer=0.033 sm=0.853 t=13 p=283497
+Vive    GRU          left   r1=0.676+-0.013 r1t=0.677 r5=0.833 eer=0.135 sm=0.680 t=12 p=283497
+Vive    Transformer  pos    r1=0.821+-0.017 r1t=0.822 r5=0.934 eer=0.056 sm=0.824 t=31 p=168617
+Vive    Transformer  rot    r1=0.774+-0.014 r1t=0.773 r5=0.904 eer=0.079 sm=0.774 t=28 p=171497
+Vive    Transformer  all    r1=0.911+-0.005 r1t=0.909 r5=0.984 eer=0.029 sm=0.910 t=26 p=174377
+Vive    Transformer  right  r1=0.855+-0.016 r1t=0.854 r5=0.973 eer=0.034 sm=0.850 t=26 p=168617
+Vive    Transformer  head   r1=0.726+-0.015 r1t=0.722 r5=0.933 eer=0.062 sm=0.724 t=25 p=168617
+Vive    Transformer  left   r1=0.639+-0.015 r1t=0.639 r5=0.822 eer=0.142 sm=0.642 t=24 p=168617
+Cosmos  MIB-CNN      pos    r1=0.828+-0.015 r1t=0.834 r5=0.968 eer=0.042 sm=0.830 t=20 p=196329
+Cosmos  MIB-CNN      rot    r1=0.867+-0.009 r1t=0.867 r5=0.955 eer=0.051 sm=0.869 t=20 p=200361
+Cosmos  MIB-CNN      all    r1=0.888+-0.007 r1t=0.889 r5=0.973 eer=0.035 sm=0.891 t=20 p=204393
+Cosmos  MIB-CNN      right  r1=0.879+-0.015 r1t=0.880 r5=0.970 eer=0.037 sm=0.889 t=13 p=71913
+Cosmos  MIB-CNN      head   r1=0.545+-0.014 r1t=0.547 r5=0.824 eer=0.131 sm=0.555 t=12 p=71913
+Cosmos  MIB-CNN      left   r1=0.632+-0.002 r1t=0.618 r5=0.866 eer=0.113 sm=0.633 t=14 p=71913
+Cosmos  GRU          pos    r1=0.889+-0.019 r1t=0.893 r5=0.975 eer=0.037 sm=0.895 t=13 p=283497
+Cosmos  GRU          rot    r1=0.846+-0.015 r1t=0.848 r5=0.941 eer=0.056 sm=0.853 t=12 p=288681
+Cosmos  GRU          all    r1=0.903+-0.001 r1t=0.901 r5=0.967 eer=0.039 sm=0.903 t=12 p=293865
+Cosmos  GRU          right  r1=0.880+-0.015 r1t=0.873 r5=0.974 eer=0.033 sm=0.872 t=12 p=283497
+Cosmos  GRU          head   r1=0.642+-0.029 r1t=0.650 r5=0.891 eer=0.093 sm=0.642 t=13 p=283497
+Cosmos  GRU          left   r1=0.693+-0.017 r1t=0.685 r5=0.877 eer=0.103 sm=0.677 t=13 p=283497
+Cosmos  Transformer  pos    r1=0.825+-0.018 r1t=0.823 r5=0.930 eer=0.062 sm=0.822 t=25 p=168617
+Cosmos  Transformer  rot    r1=0.733+-0.006 r1t=0.737 r5=0.854 eer=0.108 sm=0.736 t=24 p=171497
+Cosmos  Transformer  all    r1=0.831+-0.022 r1t=0.834 r5=0.924 eer=0.068 sm=0.830 t=24 p=174377
+Cosmos  Transformer  right  r1=0.811+-0.004 r1t=0.808 r5=0.944 eer=0.054 sm=0.811 t=25 p=168617
+Cosmos  Transformer  head   r1=0.546+-0.005 r1t=0.545 r5=0.827 eer=0.129 sm=0.541 t=26 p=168617
+Cosmos  Transformer  left   r1=0.663+-0.005 r1t=0.663 r5=0.843 eer=0.136 sm=0.668 t=24 p=168617
+pos {'MIB-CNN': np.float64(0.86), 'GRU': np.float64(0.905), 'Transformer': np.float64(0.829)} {'Quest': np.float64(0.88), 'Vive': np.float64(0.866), 'Cosmos': np.float64(0.848)}
+rot {'MIB-CNN': np.float64(0.873), 'GRU': np.float64(0.867), 'Transformer': np.float64(0.761)} {'Quest': np.float64(0.842), 'Vive': np.float64(0.844), 'Cosmos': np.float64(0.815)}
+all {'MIB-CNN': np.float64(0.914), 'GRU': np.float64(0.933), 'Transformer': np.float64(0.875)} {'Quest': np.float64(0.913), 'Vive': np.float64(0.936), 'Cosmos': np.float64(0.874)}
+right {'MIB-CNN': np.float64(0.905), 'GRU': np.float64(0.912), 'Transformer': np.float64(0.822)} {'Quest': np.float64(0.873), 'Vive': np.float64(0.909), 'Cosmos': np.float64(0.856)}
+head {'MIB-CNN': np.float64(0.676), 'GRU': np.float64(0.752), 'Transformer': np.float64(0.666)} {'Quest': np.float64(0.739), 'Vive': np.float64(0.777), 'Cosmos': np.float64(0.578)}
+left {'MIB-CNN': np.float64(0.657), 'GRU': np.float64(0.704), 'Transformer': np.float64(0.66)} {'Quest': np.float64(0.701), 'Vive': np.float64(0.657), 'Cosmos': np.float64(0.663)}

@@ -1,0 +1,10 @@
+{
+  "epochs": 150,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.1,
+  "noise_std": 0.05,
+  "max_shift": 10,
+  "scale_jitter": 0.1
+}
