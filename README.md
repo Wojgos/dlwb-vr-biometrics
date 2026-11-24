@@ -30,5 +30,12 @@ python rsa.py        # results/rsa_results.json, results/figures/rsa_*.pdf
 cd report && pdflatex raport.tex && pdflatex raport.tex
 ```
 
+Szybkie demo:
+
+```bash
+python demo.py                                              # tabela Rank-1/EER z zapisanych embeddingow (kilka s)
+python demo.py --train --system Vive --model GRU --features all   # trening na zywo jednej konfiguracji (~15 s na GPU)
+```
+
 Embeddingi: `results/runs/<system>/<model>/<cechy>/seed<k>/{train,test}_embedding.npz`
 (klucze: `embedding` [N×128], `label`, `rep`, `day`).
